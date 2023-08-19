@@ -1,10 +1,14 @@
 
 import './App.css'
+import Box from './components/context/Box'
+import { ThemeContextProvider } from './components/context/ThemeContext'
+import User from './components/context/User'
+import { UserContextProvider } from './components/context/UserContext'
 import Button from './components/event-props/Button'
 import Input from './components/event-props/Input'
 import Counter from './components/hooks-types/useReducer/Counter'
 import Login from './components/hooks-types/useState/Login'
-import User from './components/hooks-types/useState/User'
+// import User from './components/hooks-types/useState/User'
 import Greet from './components/prop-types/Greet'
 import Heading from './components/prop-types/Heading'
 // import Person from './components/prop-types/Person'
@@ -65,8 +69,14 @@ function App() {
       <Input handleChange={(event) => console.log(event)} value='' />
       <Container styles={{ border: '1px solid black', padding: '1rem', font: '0' }} />
       <Login />
-      <User />
+      {/* <User /> */}
       <Counter />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </>
   )
 }
