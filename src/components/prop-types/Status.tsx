@@ -1,5 +1,5 @@
 type StatusProps = {
-	status: 'loading' | 'success' | 'error' //this checks for any of the messages validation in the prop type
+	status: 'loading' | 'success' | 'error' //this checks for any of the messages validation in the prop typ, it is called multiple string prop type
 }
 
 

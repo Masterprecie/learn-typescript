@@ -1,11 +1,20 @@
 
 
+// type brothersProps = {
+// 	list: {
+// 		first: string, //Array props type
+// 		last: string
+// 	}[]
+// }
+
+
+//import a resuable props
+import { Name } from './person.types'
+
 type brothersProps = {
-	list: {
-		first: string, //Array props type
-		last: string
-	}[]
+	list: Name[]
 }
+
 const PersonList = (props: brothersProps) => {
 	return (
 		<div>
