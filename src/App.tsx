@@ -2,6 +2,8 @@
 import './App.css'
 import Button from './components/event-props/Button'
 import Input from './components/event-props/Input'
+import Login from './components/hooks-types/useState/Login'
+import User from './components/hooks-types/useState/User'
 import Greet from './components/prop-types/Greet'
 import Heading from './components/prop-types/Heading'
 // import Person from './components/prop-types/Person'
@@ -61,7 +63,8 @@ function App() {
       <Button handleClick={(event, id) => console.log('clicked', event, id)} />
       <Input handleChange={(event) => console.log(event)} value='' />
       <Container styles={{ border: '1px solid black', padding: '1rem', font: '0' }} />
-
+      <Login />
+      <User />
     </>
   )
 }
