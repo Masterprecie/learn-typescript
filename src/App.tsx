@@ -2,6 +2,7 @@
 import './App.css'
 import Button from './components/event-props/Button'
 import Input from './components/event-props/Input'
+import Counter from './components/hooks-types/useReducer/Counter'
 import Login from './components/hooks-types/useState/Login'
 import User from './components/hooks-types/useState/User'
 import Greet from './components/prop-types/Greet'
@@ -65,6 +66,7 @@ function App() {
       <Container styles={{ border: '1px solid black', padding: '1rem', font: '0' }} />
       <Login />
       <User />
+      <Counter />
     </>
   )
 }
