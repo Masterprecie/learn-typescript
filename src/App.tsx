@@ -15,6 +15,7 @@ import Heading from './components/prop-types/Heading'
 // import PersonList from './components/prop-types/PersonList'
 import Presh from './components/prop-types/Presh'
 import Status from './components/prop-types/Status'
+import MutableRef from './components/ref/MutableRef'
 import Container from './components/style-props/Container'
 
 //Three tips on prop tyoes
@@ -77,6 +78,7 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+      <MutableRef />
     </>
   )
 }
