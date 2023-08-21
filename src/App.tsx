@@ -1,12 +1,15 @@
 
 import './App.css'
+import Private from './components/auth/Private'
+import Profile from './components/auth/Profile'
+import { Counter } from './components/class/Counter'
 import Box from './components/context/Box'
 import { ThemeContextProvider } from './components/context/ThemeContext'
 import User from './components/context/User'
 import { UserContextProvider } from './components/context/UserContext'
 import Button from './components/event-props/Button'
 import Input from './components/event-props/Input'
-import Counter from './components/hooks-types/useReducer/Counter'
+//import Counter from './components/hooks-types/useReducer/Counter'
 import Login from './components/hooks-types/useState/Login'
 // import User from './components/hooks-types/useState/User'
 import Greet from './components/prop-types/Greet'
@@ -71,7 +74,7 @@ function App() {
       <Container styles={{ border: '1px solid black', padding: '1rem', font: '0' }} />
       <Login />
       {/* <User /> */}
-      <Counter />
+      {/* <Counter /> */}
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
@@ -79,6 +82,8 @@ function App() {
         <User />
       </UserContextProvider>
       <MutableRef />
+      <Counter message='The count value is:' />
+      <Private isLoggedIn={false} component={Profile} />
     </>
   )
 }
