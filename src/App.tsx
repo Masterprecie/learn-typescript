@@ -1,6 +1,7 @@
 
 import './App.css'
 import { CustomButton } from './components/html/Button'
+import Text from './components/polymorphic/Text'
 //import Lists from './components/generic/Lists'
 import RandomNumber from './components/restriction/RandomNumber'
 import Toast from './components/templateLiterals/Toast'
@@ -121,7 +122,9 @@ function App() {
       <RandomNumber value={10} isPositive />
       <Toast position='center' />
       <CustomButton variant='primary' onClick={() => console.log('click')}>Secondary Button</CustomButton>
-
+      <Text as='h2' size='lg'>Heading</Text>
+      <Text as='p' size='md'>Paragraph</Text>
+      <Text as='label' htmlFor='someId' size='sm' color='secondary'>Label</Text>
     </>
   )
 }
